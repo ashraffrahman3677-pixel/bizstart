@@ -3,90 +3,53 @@
 ## Core Principles
 
 ### 1. Production Quality
-- All code must be production-ready
-- No incomplete features in main branch
 - All code must compile and run
-- Comprehensive error handling required
+- No incomplete features
+- Comprehensive error handling
 
 ### 2. Architecture
-- Follow Clean Architecture principles
-- Use Repository Pattern for data abstraction
-- Implement Dependency Injection
-- Adhere to SOLID principles
+- Clean Architecture
+- Repository Pattern
+- Dependency Injection
+- SOLID Principles
 
 ### 3. Security
-- Never hardcode secrets or credentials
-- Use environment variables for configuration
-- Implement Row Level Security (RLS) in database
-- Validate all user inputs
-- Use secure authentication methods
+- Never hardcode secrets
+- Use environment variables
+- Enable Row Level Security
+- Validate all inputs
 
 ### 4. Code Quality
 - Follow Dart style guide
-- Use meaningful variable and function names
-- Add documentation for public APIs
-- Keep functions small and focused
-- DRY principle - Don't Repeat Yourself
+- Meaningful names
+- Document public APIs
+- DRY principle
 
-### 5. Documentation
-- Update README.md for new features
-- Document architecture decisions
-- Include API documentation
-- Write code comments for complex logic
-- Update CHANGELOG.md for all changes
-
-### 6. Version Control
-- Create feature branches from main
-- Use descriptive commit messages
-- Make frequent small commits
-- Create Pull Requests for code review
-- Squash commits before merging
-
-### 7. Testing
-- Write tests for critical functionality
+### 5. Testing
+- Write tests for critical code
 - Fix compilation errors immediately
-- Test edge cases and error scenarios
-- Ensure all tests pass before PR
+- Test edge cases
 
 ## Commit Message Format
 
 ```
 <type>(<scope>): <subject>
-
-<body>
-
-<footer>
 ```
 
-### Types
-- `feat`: A new feature
-- `fix`: A bug fix
-- `docs`: Documentation changes
-- `style`: Code style changes (formatting)
-- `refactor`: Code refactoring
-- `perf`: Performance improvements
-- `test`: Adding or updating tests
-- `chore`: Build process, dependencies
-- `init`: Initial setup
+Types: feat, fix, docs, style, refactor, test, chore, init
 
-## Never
+## Rules
 
-- ❌ Hardcode API keys, URLs, or credentials
-- ❌ Delete working code without replacement
-- ❌ Commit broken or non-compiling code
-- ❌ Skip error handling
-- ❌ Ignore security requirements
-- ❌ Leave incomplete features
-- ❌ Skip documentation updates
-- ❌ Commit directly to main
+✅ **DO:**
+- Make small, frequent commits
+- Write clear commit messages
+- Update documentation
+- Test your changes
+- Handle errors gracefully
 
-## Always
-
-- ✅ Follow the roadmap
-- ✅ Read blueprint documents
-- ✅ Write clear commit messages
-- ✅ Test your changes
-- ✅ Update documentation
-- ✅ Handle errors gracefully
-- ✅ Use meaningful names
-- ✅ Make small, frequent commits
+❌ **DON'T:**
+- Hardcode credentials
+- Commit non-compiling code
+- Skip error handling
+- Leave incomplete features
+- Commit to main directly
