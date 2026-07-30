@@ -1,17 +1,42 @@
-# ai_business_os
+# EZBiz — AI Business Operating System for SMEs
 
-A new Flutter project.
+EZBiz is a cross-platform Flutter prototype for setting up a small-business
+profile and viewing it from a simple dashboard. Business profile data is stored
+locally with `shared_preferences`.
 
-## Getting Started
+## Current status
 
-This project is a starting point for a Flutter application.
+- [x] Flutter project initialized for Android, iOS, web, Windows, macOS, and Linux
+- [x] Business profile setup flow
+- [x] Local profile persistence
+- [x] Dashboard view
+- [x] Static analysis and automated tests
+- [ ] Supabase database integration
+- [ ] Authentication
+- [ ] AI-assisted business workflows
 
-A few resources to get you started if this is your first Flutter project:
+See [ROADMAP.md](./ROADMAP.md) for the longer-term product direction.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Requirements
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter 3.44.4 or compatible
+- Dart 3.12.2 or compatible
+
+## Install and verify
+
+```powershell
+flutter pub get
+flutter analyze
+flutter test
+flutter build web
+```
+
+## Run
+
+```powershell
+flutter run
+```
+
+## License
+
+MIT License — see [LICENSE](./LICENSE).
